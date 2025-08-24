@@ -1,0 +1,9 @@
+# Create a simple tip calculator. The program should prompt for a bill amount and a tip rate. 
+# The program must compute the tip, then print both the tip and the total amount of the bill. 
+# You can ignore input validation and assume that the user will enter valid numbers.
+
+bill = float(input('What is the bill? \n'))
+tip_percent = float(input('What is the tip percentage? \n'))
+tip = round( bill * (tip_percent/100))
+
+print(f'The tip for {tip_percent} percent is {tip} and your total payment is {bill + tip} ')
